@@ -1,0 +1,16 @@
+# Puppeteer temp files
+_pdf_pages/
+_slides.html
+
+# Output files (generated, not part of skill)
+*.pdf
+
+# Node
+node_modules/
+
+# macOS
+.DS_Store
+
+# Project-specific HTML files (not part of skill)
+*.html
+!references/**/*.html
