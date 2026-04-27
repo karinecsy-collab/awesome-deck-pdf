@@ -41,7 +41,7 @@ clawhub install html-ppt-to-pdf
 
 ### Manual (Claude Code / Codex / any agent)
 ```bash
-git clone https://github.com/<your-username>/html-ppt-to-pdf.git ~/.agents/skills/html-ppt-to-pdf
+git clone https://github.com/karinecsy-collab/html-ppt-to-pdf.git ~/.agents/skills/html-ppt-to-pdf
 ```
 Then reference `SKILL.md` in your agent's system prompt or `AGENTS.md`.
 
