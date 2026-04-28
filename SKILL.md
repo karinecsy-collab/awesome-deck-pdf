@@ -39,7 +39,7 @@ Once you receive a reply, prepare a numbered list: slide title + one-line summar
 
 > Here's the planned structure — does this look right? Anything to add, remove, or change?
 
- **only then** begin generating HTML.
+  begin generating HTML.
 
 ---
 
@@ -77,8 +77,8 @@ For full installation instructions across OpenClaw, Claude Code, Codex, and Linu
 
 ```
 User input (image / website URL / style keyword / .pptx file)
-    ↓ Step 1: Extract design spec → ⚠️ Confirm with user
-    ↓ Step 2: Outline slide content → ⚠️ Confirm with user
+    ↓ Step 1: Extract design spec →  Confirm with user
+    ↓ Step 2: Outline slide content →  Confirm with user
     ↓ Step 3: Generate HTML → 💾 Save slides.html to disk
     ↓ Step 4: Run export_pdf.js → 💾 Output slides.pdf
     
@@ -87,7 +87,7 @@ Both slides.html and slides.pdf must exist as final outputs.
 
 ---
 
-## ⚠️ Two Mandatory Confirmation Gates (never skip)
+## ## Workflow Steps
 
 ### Gate 1: Design Style
 
@@ -100,7 +100,7 @@ After analyzing the input, show the extracted design spec summary and ask for co
 >
 > Does this match the style you want? Any adjustments?
 
-**⚠️ If website fetch fails (e.g. Fake IP / login required):**
+** If website fetch fails (e.g. Fake IP / login required):**
 - Tell the user clearly why it failed
 - Ask for screenshots: **"Could you send a few screenshots of the site? I'll analyze the design from those."**
 - **Never assume or default to any style** — wait for user confirmation before proceeding
@@ -172,7 +172,7 @@ Fonts go into DESIGN.md as CSS variables. Append Chinese fallbacks at the end (n
 
 ## Step 2: Generate HTML
 
-> ⚠️ **Save the HTML to a `.html` file first. Do not merge HTML generation and PDF export into one step.** The HTML file is a required intermediate artifact — it must exist on disk before running `export_pdf.js`.
+>  **Save the HTML to a `.html` file first. Do not merge HTML generation and PDF export into one step.** The HTML file is a required intermediate artifact — it must exist on disk before running `export_pdf.js`.
 
 Generate a single `.html` file and write it to disk (e.g. `slides.html`):
 
@@ -192,7 +192,7 @@ Only proceed to Step 3 once the `.html` file is saved and verified.
 
 ## Step 3 & 4: Export PDF via Puppeteer
 
-> ⚠️ **Only use `export_pdf.js` (Puppeteer screenshot-and-compose). Do NOT use any of these alternatives — they all produce broken output:**
+>  **Only use `export_pdf.js` (Puppeteer screenshot-and-compose). Do NOT use any of these alternatives — they all produce broken output:**
 > - `page.pdf()` directly → A4 portrait, white space below every slide
 > - `wkhtmltopdf` → outdated WebKit engine, broken flexbox/grid/modern CSS
 > - Any other HTML-to-PDF CLI (Prince, WeasyPrint, pdfkit, etc.) → layout incorrect
