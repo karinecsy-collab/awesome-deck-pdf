@@ -43,7 +43,7 @@ clawhub install awesome-deck-pdf
 ```bash
 git clone https://github.com/karinecsy-collab/awesome-deck-pdf.git ~/.agents/skills/awesome-deck-pdf
 ```
-Then reference `SKILL.md` in your agent's system prompt or `AGENTS.md`.
+Then reference `SKILL.md` in your agent's instructions or `config`.
 
 ### Dependencies
 ```bash
