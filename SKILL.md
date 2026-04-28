@@ -5,9 +5,9 @@ description: Turn any design style into a polished HTML slide deck and export it
 
 # HTML → PDF Slide Workflow
 
-## ‼️ STOP — Read Before Doing Anything
+## How It Works
 
-Before writing a single line of code or HTML, you MUST complete these two confirmation steps **in order**. Do not proceed until you receive explicit user approval for each.
+When you use this skill, the workflow is: these two confirmation steps **in order**. This ensures you get exactly what you want.
 
 ### Confirmation 1 of 2: Design Style
 
@@ -25,7 +25,7 @@ If the user provided a website URL and fetching fails (Fake IP, login wall, etc.
 - Ask: **"Could you send a few screenshots of the site? I'll analyze the design from those."**
 - Do NOT assume or default to any style
 
-Wait for explicit approval → then move to Confirmation 2.
+Then move to Confirmation 2.
 
 ### Confirmation 2 of 2: Slide Content
 
@@ -39,11 +39,11 @@ Once you receive a reply, prepare a numbered list: slide title + one-line summar
 
 > Here's the planned structure — does this look right? Anything to add, remove, or change?
 
-Wait for explicit approval → **only then** begin generating HTML.
+ **only then** begin generating HTML.
 
 ---
 
-**If either confirmation is skipped, the workflow is broken. Start over from Confirmation 1.**
+**Follow the confirmation steps for best results. **
 
 ---
 
