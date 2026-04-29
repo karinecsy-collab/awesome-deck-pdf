@@ -1,4 +1,4 @@
-# awesome-deck-pdf
+# html-ppt-to-pdf
 
 An AI skill that turns any design style into a polished HTML slide deck and exports it as a high-quality PDF.
 
@@ -36,14 +36,14 @@ Say *"make me slides in Apple style about X"* — the agent will:
 
 ### OpenClaw
 ```bash
-clawhub install awesome-deck-pdf
+clawhub install html-ppt-to-pdf
 ```
 
 ### Manual (Claude Code / Codex / any agent)
 ```bash
-git clone https://github.com/karinecsy-collab/awesome-deck-pdf.git ~/.agents/skills/awesome-deck-pdf
+git clone https://github.com/<your-username>/html-ppt-to-pdf.git ~/.agents/skills/html-ppt-to-pdf
 ```
-Then reference `SKILL.md` in your agent's instructions or `config`.
+Then reference `SKILL.md` in your agent's system prompt or `AGENTS.md`.
 
 ### Dependencies
 ```bash
@@ -58,7 +58,7 @@ See [`references/install.md`](references/install.md) for platform-specific setup
 ## 📁 Skill structure
 
 ```
-awesome-deck-pdf/
+html-ppt-to-pdf/
 ├── SKILL.md                  ← Agent instructions (start here)
 ├── scripts/
 │   └── export_pdf.js         ← Puppeteer PDF export script (auto-detects sections)
@@ -94,4 +94,3 @@ The skill uses **Puppeteer screenshot-and-compose** for PDF export — not `wkht
 ## 📄 License
 
 MIT
-

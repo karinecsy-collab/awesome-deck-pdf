@@ -21,7 +21,7 @@ The skill is auto-discovered on next session start. No restart needed.
    ```bash
    cp -r html-ppt-to-pdf ~/.claude/skills/
    ```
-3. Reference it in your project's `agent config` or instructions:
+3. Reference it in your project's `CLAUDE.md` or system prompt:
    ```
    Skills path: ~/.claude/skills/html-ppt-to-pdf/SKILL.md
    ```
@@ -34,7 +34,7 @@ The skill is auto-discovered on next session start. No restart needed.
    ```bash
    cp -r html-ppt-to-pdf ~/your-project/skills/
    ```
-2. Add to your `your agent config` or instructions:
+2. Add to your `AGENTS.md` or system prompt:
    ```
    Available skill: skills/html-ppt-to-pdf/SKILL.md
    ```
@@ -43,7 +43,7 @@ The skill is auto-discovered on next session start. No restart needed.
 
 ## Any Agent (Manual)
 
-Paste the contents of `SKILL.md` into your agent's instructions or context window. The agent will follow the workflow instructions automatically.
+Paste the contents of `SKILL.md` into your agent's system prompt or context window. The agent will follow the workflow instructions automatically.
 
 ---
 
@@ -89,7 +89,7 @@ If `npm install puppeteer` fails (network/permission issues):
 
 ```bash
 # Option 1: skip download, install Chrome separately
-npm install puppeteer 
+npm install puppeteer --ignore-scripts
 npx puppeteer browsers install chrome
 
 # Option 2: use puppeteer-core with system Chrome
