@@ -4,10 +4,10 @@
 
 ```bash
 # Install via ClawHub
-clawhub install html-ppt-to-pdf
+clawhub install awesome-deck-pdf
 
 # Or install manually
-cp -r html-ppt-to-pdf ~/.agents/skills/
+cp -r awesome-deck-pdf ~/.agents/skills/
 ```
 
 The skill is auto-discovered on next session start. No restart needed.
@@ -19,12 +19,9 @@ The skill is auto-discovered on next session start. No restart needed.
 1. Download or clone the skill folder
 2. Place it in your skills directory:
    ```bash
-   cp -r html-ppt-to-pdf ~/.claude/skills/
+   cp -r awesome-deck-pdf ~/.claude/skills/
    ```
-3. Reference it in your project's `CLAUDE.md` or system prompt:
-   ```
-   Skills path: ~/.claude/skills/html-ppt-to-pdf/SKILL.md
-   ```
+3. The skill will be auto-loaded on next session
 
 ---
 
@@ -32,18 +29,9 @@ The skill is auto-discovered on next session start. No restart needed.
 
 1. Place the skill folder in your workspace:
    ```bash
-   cp -r html-ppt-to-pdf ~/your-project/skills/
+   cp -r awesome-deck-pdf ~/your-project/skills/
    ```
-2. Add to your `AGENTS.md` or system prompt:
-   ```
-   Available skill: skills/html-ppt-to-pdf/SKILL.md
-   ```
-
----
-
-## Any Agent (Manual)
-
-Paste the contents of `SKILL.md` into your agent's system prompt or context window. The agent will follow the workflow instructions automatically.
+2. The skill will be auto-loaded
 
 ---
 
